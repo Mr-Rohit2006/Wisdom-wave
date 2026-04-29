@@ -27,6 +27,8 @@ interface UserData {
   puzzlesSolved: number;
   rank: number;
   activity: { icon: string; text: string; xp: string; time: string; color: string }[];
+  topicsDone?: string[];           // Add this
+  moduleProgress?: Record<string, ModuleProgress>;  // Add this
 }
 
 interface LeaderboardUser {
